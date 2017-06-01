@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LabCar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- navbar labcar -->
+  <header>
+    <nav class="navbar navbar-default navbar-labcar">
+      <div class="container-fluid">
+        <div class="row navHeader">
+          <div class="col-md-4">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-offset-4">
+            <div class="collapse navbar-collapse navbar-right nav-collapse-list" id="bs-example-navbar-collapse-1">
+              <ul class="nav">
+                <li><a href="#">Viaja</span></a></li>
+                <li><a href="#">Conduce</span></a></li>
+                <li><a href="#">Iniciar Sesion</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- section hero -->
+  <section id="hero">
+    <div class="enjoythetravel">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="hidden-xs">Disfruta del viaje <br>Eres dueño de tu tiempo</h1>
+            <h1 class="visible-xs">Comienza a viajar con <img src="assets/img/logo-blanco.png" alt=""> </h1>
+          </div>
+          <div class="col-md-12 hidden-xs">
+            <h2>Viaja con <img src="assets/img/logo-blanco.png" alt=""></h2>
+          </div>
+          <div class="col-md-12 hidden-xs">
+            <p>REGISTRATE</p>
+            <hr>
+          </div>
+          <div class="col-md-12">
+            <button class="btn btn-default hidden-xs" type="submit">Conviertete en un conductor</button>
+            <button class="btn btn-default visible-xs" type="submit">Descargar el app</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section informacion -->
+  <section id="informacion">
+    <div class="container text-center">
+      <div class="row thumbnail">
+        <div class="col-xs-12 col-md-5 text-center">
+          <h2 class="visible-xs-block">La nueva App</h2>
+          <img class="img-responsive" src="assets/img/celular.png" alt="cellphone labcar">
+        </div>
+        <div class="col-md-5 col-md-offset-1 visible-md-block visible-lg-block text-left">
+          <div class="row">
+            <div class="col-md-12 col-xs-12 ">
+              <h2>Descarga la nueva app</h2>
+              <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+              <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="visible-xs">Llega a tu destino aun más rápido</h4>
+    </div>
+  </section>
+
+  <!-- section conduce -->
+  <section id="conduce" class="conduce-content">
+    <div class="container-fluid center-block">
+      <div class="row ">
+        <div class="content col-md-4 col-md-offset-8">
+          <h2>Conduce cuando quieras</h2>
+          <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+          <button  class="btn btn-warning btn-lg" type="button">Conviértete en conductor</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section tarifa -->
+  <section id="tarifa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Tarifas</h1>
+          <p>Consulta las tarifas LabCar aqui</p>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="puntoPartida" class="glyphicon glyphicon-record"></label>
+              <input id="puntoPartida" type="text" class="form-control" placeholder="Ingrese su punto de partia">
+            </div>
+            <div class="form-group">
+              <label for="puntoDestino" class="glyphicon glyphicon-send"></label>
+              <input id="puntoDestino" type="text" class="form-control" placeholder="Ingrese su destino">
+            </div>
+            <div class="form-group">
+              <button id= "trazarRuta" type="submit" class="btn btn-default col-md-offset-3">¡Trazar ruta!</button>
+              <div id="calcTarifa" class="col-md-offset-3"></div>
+            </div>
+          </form>
+        </div>
+        <div class="thumbnail col-md-6 hidden-xs">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="bg-footer">
+      <div class="container tres-filas">
+        <div class="row una-columna">
+          <div class="col-md-12">
+            <img src="assets/img/logo-blanco.png" alt="logo footer">
+            <hr>
+          </div>
+        </div>
+        <div class="row cuatro-columnas">
+            <div class="col-md-3 hidden-xs">
+                <ul class="nav navbar-nav text-center icons-desktop">
+                  <li><a href="#" class="icon-facebook"></a></li> 
+                  <li><a href="#" class="icon-twitter"></a></li>
+                  <li><a href="#" class="icon-appleinc"></a></li>
+                  <li><a href="#" class="icon-linkedin2"></a></li>
+                  <li><a href="#" class="icon-play3"></a></li>
+                </ul> 
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <ul>
+                <li><a href="#">Viaja</a></li>
+                <li><a href="#">Conduce</a></li>
+                <li><a href="#">Ciudades</a></li>
+                <li><a href="#">Tarifas</a></li>
+                <li><a href="#">Entregas</a></li>
+                <li><a href="#">Cómo funciona</a></li>
+                <li><a href="#">Países</a></li>
+                <li><a href="#">Seguridad</a></li> 
+              </ul>
+            </div>
+            <div class="hidden-xs col-md-3">
+              <ul>
+                <li><a href="#">Oportunidades</a></li>
+                <li><a href="#">Nuestra Historia</a></li>
+                <li><a href="#">API de lab</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Desarrolladores</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Labortria</a></li>
+                <li><a href="#">Coders</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <ul class="visible-xs nav navbar-nav text-center icons-mobile">
+                <li><a href="#" class="icon-facebook"></a></li> 
+                <li><a href="#" class="icon-twitter"></a></li>
+                <li><a href="#" class="icon-appleinc"></a></li>
+                <li><a href="#" class="icon-linkedin2"></a></li>
+                <li><a href="#" class="icon-play3"></a></li>
+              </ul> 
+              <div class="text-center">
+                <img src="assets/img/app-store.png" alt="appstore">
+                <img src="assets/img/google-play.png" alt="googleplay">
+              </div>
+            </div>
+         </div>
+
+         <div class="row una-columna">
+            <div class="col-md-12 text-center">
+              <hr>
+              <address> © 2017 LabCar technologies Inc.</address>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYezvZfBcThUhrpyzfW_xRVj-aljaRvNw&callback=initMap&libraries=places"
+  type="text/javascript"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src = "js/app.js"></script>
+</body>
+</html>

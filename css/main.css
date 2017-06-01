@@ -1,0 +1,296 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-footer{
+  background-color: #2b2b2b;
+}
+
+body {
+  color: #fff;
+  background-color: #f7b617;
+}
+p {
+  font-size: 1.5em;
+}
+li {
+  list-style: none;
+}
+a {
+  color:#fff;
+}
+a:hover{
+  text-decoration: none;
+  color:#fff;
+}
+
+.thumbnail {
+  background: none;
+  padding: 10px;
+  border-color: #fff;
+}
+
+.btn-default{
+  margin-top: 14px;
+  font-weight: bold;
+}
+
+/*styles portada*/
+.navbar-toggle{
+  float: left;
+}
+
+.navHeader{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle{
+  border: 0;
+  margin-top: 20px;
+}
+
+a.navbar-brand{
+  position: relative;
+  left: 82px;
+}
+
+.nav-collapse-list>ul>li>a{
+  color:#000;
+  padding: 30px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+/*Hero*/
+.enjoythetravel{
+  position:absolute;
+  width: 300px;
+  height: 200px;
+  right: 0;
+  top: 20%;
+  background-color: #f7b617;
+}
+#hero{
+  position: relative;
+  background: url(../assets/img/taxi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 90vh;
+  overflow: hidden;
+  color: #fff;
+}
+/*styles section informacion*/
+#informacion{
+  width: 100%;
+  height: 85vh;
+  background-color:  #f7b617;
+}
+
+#informacion .thumbnail {
+  margin: 21% 2% 6% 0;
+  padding: 7% 7%;
+}
+#informacion .container{
+  margin-left: auto;
+  padding-left: 21px;
+}
+
+/*Styles Conduce*/
+.conduce-content .content {
+  padding: 5% 14px;
+  background-color: rgba(52, 52, 52, 0.45);
+  height: 350px;
+}
+.btn-warning{
+  background-color:  #f7b617;
+}
+#conduce{
+  background: url(../assets/img/conduce.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*styles about section tarifa*/
+.form-group input[type="text"]{
+  background:none;
+  border: 1px solid #fff;
+  width: 70%;
+  display: inline-block;
+  color: #fff;
+}
+input[type="text"]::-webkit-input-placeholder{
+  color: #fff;
+}
+#tarifa{
+  width: 100%;
+  height: 80vh;
+  padding: 5% ;
+}
+
+#calcTarifa {
+  width: 250px;
+  height: 100px;
+  color: #2b2b2b;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+/*Estilos Footer */
+#footer {
+background-color:#2b2b2b;
+padding-top: 20px;
+}
+
+  #footer > img{
+    width: 100px;
+    margin: 7px;
+  }
+div.row.cuatro-columnas div.col-md-3 {
+  
+  min-height: 370px;
+  padding-top: 15px;
+  line-height: 3em;
+  text-align: left; 
+}
+ul.nav.navbar-nav.icons-mobile>li {
+  display: inline-block;
+  padding:0; 
+}
+ul.nav.navbar-nav.icons-mobile>li a {
+  padding: 2px;   
+}
+div.row.cuatro-columnas div.col-md-3:nth-child(1),
+div.row.cuatro-columnas div.col-md-3:nth-child(4) {
+  display: block;
+}
+#footer > div > div.row.cuatro-columnas > div:nth-child(4) > div.text-center > img {
+  width: 100px;
+}
+
+@media (min-width: 768px){
+  a.navbar-brand>img{
+    position: relative;
+    top: 0px;
+    left: 69px;
+  }
+
+  .nav-collapse-list ul li{
+    display: inline-block;
+    width:120px;
+    text-align: center;
+    position: relative;
+    top: 14px;
+  }
+
+  .nav-collapse-list>ul>li>a{
+    padding: 10px;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .navHeader{
+    padding-bottom: 20px;
+  }
+
+  /*Hero*/
+  .enjoythetravel{
+    position:absolute;
+    width: 500px;
+    height: 320px;
+    right: 0;
+    top: 20%;
+    padding-left: 20px;
+    background-color: #f7b617;
+  }
+  .enjoythetravel hr{
+    margin-top: 30px;
+    width: 38%;
+  }
+  .enjoythetravel hr::after {
+    content: "O bien";
+    position: relative;
+    top: -15px;
+    left: 35%;
+    width: 80px;
+    background-color: #f7b617 ;
+    padding: 0 50px;
+  }
+
+  #hero{
+    position: relative;
+    background: url(../assets/img/taxi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 90vh;
+    overflow: hidden;
+    color: #fff;
+  }
+
+  /*Styles Informacion*/
+  #informacion .thumbnail{
+    margin: 5% 2% 5% 0;
+    padding: 2% 7%;
+  }
+  #informacion .container{
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  /*Style Tarifa*/
+  #map {
+    height: 400px;
+  }
+/*Estiloa Footer */
+
+#footer{
+  width: 100%;
+  background-color:#2b2b2b;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-top: 20px;
+}
+#footer img{
+  width: 150px;
+  margin: 7px;
+}
+#footer hr{
+  margin:0;
+  margin-top: 10px;
+}
+#footer address {
+  padding-top: 10px;
+}
+
+div.row.cuatro-columnas div.col-md-3 {
+  min-height: 400px;
+  padding-top: 15px;
+  line-height: 3em;
+}
+div.row.cuatro-columnas div.col-md-3:nth-child(1),
+div.row.cuatro-columnas div.col-md-3:nth-child(4) {
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+ul.icons-desktop>li {
+  display: inline-block;
+  padding: 0;
+}
+ul.icons-desktop>li a {
+  padding: 5px;
+}
+ul.icons-desktop>li a:hover {
+  color:black;
+}
+
+
+
+}
